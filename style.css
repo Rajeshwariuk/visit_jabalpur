@@ -1,0 +1,142 @@
+/*this is for full page measurement*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+/*this is for elemnets inside the heading tag*/
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+    url("images/jabalpur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*this is for navigation bar. style for the items in the top of page*/
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+/*here we had used my jabalpur as logo.*/
+nav .logo {
+  width: 25%;
+  text-align: center;
+  /*background: red;*/
+}
+/* this is for space between content for menu bar*/
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+/* designing the header */
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/* changing the color of first element */
+nav .menu a:first-child {
+  color: #00b894;
+}
+/* adjusting element for header elemnt  */
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+/* setting amallest header */
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+/* this is for main heading in page */
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+/* designing the paragraph(discrption) */
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+/* designing the text for header, making upper case */
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+/* button for signup */
+section .btnone {
+   background: #fff;
+  color: #000;
+}
+/* button when hovering */
+.btnone:hover {
+  background: #00b894;
+  color: white;
+}
+/* botton for know more about the website */
+section .btntwo {
+  background: #00b894;
+  color: white;
+}
+/* button for hovering */
+.btntwo:hover {
+  background: #fff;
+  color: #000;
+}
+/* speed of chnging content */
+.change_content:after {
+  content: "";
+  animation: changetextnfinite  10s linear;
+  color: #00b894;
+}
+/*controls the intermediate steps in a CSS animation sequence by defining*/
+/*styles for keyframes along the animation sequence*/
+@keyframes changetext {
+  0% {
+    content: "Gwarighat";
+  }
+  20% {
+    content: "Bhedaghat";
+  }
+  35% {
+    content: "Kachnarcity";
+  }
+  60% {
+    content: "Madan mahal";
+  }
+  80% {
+    content: "Rani durgavati kila";
+  }
+  100% {
+    content: "Jalpari";
+  }
+}
